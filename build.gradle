@@ -1,15 +1,31 @@
 plugins {
-	id 'java'
+	id 'war'
 	id 'org.springframework.boot' version '3.1.2'
 	id 'io.spring.dependency-management' version '1.1.2'
+}
+/*jar {
+	enabled = false
+	//classifier = ''
+}
+
+bootJar {
+	enabled = true
+}*/
+
+war {
+	enabled = false
+	//classifier = ''
+}
+
+bootWar {
+	enabled = true
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
-java {
 	sourceCompatibility = '17'
-}
+
 
 repositories {
 	mavenCentral()
